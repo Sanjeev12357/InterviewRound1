@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div className='bg-black w-[100%] md:h-[100%] h-[100vh] flex items-center justify-center '>
-        <div className='md:w-[340px] w-full h-full  my-4  relative rounded-md items-center px-6 py-4  bg-[#FEFFFE]  lg:w-[450px]'>
+        <div className='md:w-[340px] w-full h-full  my-4  relative rounded-md items-center px-6 py-6  bg-[#FEFFFE]  lg:w-[450px]'>
 
           <div className='cross'>
-          <div className='right-2 absolute'>
+          <div className='right-4 md:right-2 absolute'>
           <img
           src={cross}
           />
@@ -40,8 +40,8 @@ function App() {
           </div>
 
           <div>
-            <h1 className="font-bold uppercase mt-6 text-2xl">We would love </h1>
-            <h1 className='font-normal uppercase text-2xl '>To know about you!</h1>
+            <h1 className="font-bold uppercase mt-6 text-3xl md:text-2xl">We would love </h1>
+            <h1 className='font-normal uppercase text-3xl md:text-2xl '>To know about you!</h1>
           </div>
 
           <MyHookForm/>

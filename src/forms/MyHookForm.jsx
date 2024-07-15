@@ -14,12 +14,12 @@ const MyHookForm = () => {
   };
 
   return (
-    <form className='flex  flex-col gap-4 mt-6' onSubmit={handleSubmit(onSubmit)}>
-      <div className='flex flex-col gap-1 '>
-        <label className='text-[10px] pl-2 font-medium'>Full Name</label>
+    <form className='flex  flex-col gap-6 md:gap-4  mt-6' onSubmit={handleSubmit(onSubmit)}>
+      <div className='flex flex-col gap-2 md:gap-1 '>
+        <label className='text-sm md:text-[10px] pl-2 font-medium'>Full Name</label>
         <input
         required
-            className='border text-gray-400 border-gray-300 text-[10px] rounded-full w-full p-2'
+            className='border text-gray-400 border-gray-300 text-sm md:text-[10px] rounded-full w-full p-2'
             placeholder='Enter your full name'
           type="text"
           {...register('fullName', { required: "Full name is required" })}
@@ -28,11 +28,11 @@ const MyHookForm = () => {
       </div>
 
       <div className='flex flex-col gap-1'>
-        <label className='text-[10px] pl-2 font-medium'>City:</label>
+        <label className='text-sm md:text-[10px] pl-2 font-medium'>City:</label>
         <input
         required
         placeholder='Enter your city name'
-        className='border text-gray-400 border-gray-300 text-[10px] rounded-full w-full p-2'
+        className='border text-gray-400 border-gray-300 text-sm md:text-[10px] rounded-full w-full p-2'
           type="text"
           {...register('city', { required: 'City is required' })}
         />
@@ -40,7 +40,7 @@ const MyHookForm = () => {
       </div>
 
       <div className='flex flex-col gap-1'>
-        <label className='text-[10px] pl-2 font-medium'>Mobile Number:</label>
+        <label className='text-sm md:text-[10px] pl-2 font-medium'>Mobile Number:</label>
         <input
         required
         placeholder='Enter your mobile number'
@@ -59,18 +59,23 @@ const MyHookForm = () => {
       </div>
 
       <div className='flex flex-col gap-1'>
-        <label className='text-[10px] pl-2 font-medium'>Date of Birth:</label>
+        <label className='text-sm md:text-[10px] pl-2 font-medium'>Date of Birth:</label>
         <input
         required
-        className='border text-gray-400 border-gray-300 text-[10px] rounded-full w-full p-2'
+        className='border text-gray-400 border-gray-300 text-sm md:text-[10px] rounded-full w-full p-2'
           type="date"
           {...register('dob', { required: 'Date of birth is required' })}
         />
         {errors.dob && <span className="text-[10px] -mt-1 ml-2  text-yellow-500">{errors.dob.message}</span>}
       </div>
 
-      <button className='bg-[#FEC628] rounded-full font-medium py-2 text-[10px] mt-2 ' type="submit">Let the conversation begin!</button>
-      <h1 className='pb-4 flex items-center justify-center font-medium text-[10px] '>By logging in you aggree to our terms of use and privacy policy</h1>
+      <button className='bg-[#FEC628] rounded-full font-semibold text-base md:font-medium py-2 md:text-[10px] mt-4 md:mt-2 ' type="submit">Let the conversation begin!</button>
+      <h1 className='mt-2 flex items-center justify-center font-normal text-[12px] md:text-[10px]'>
+      By logging in you agree to our 
+      <span className='font-medium ml-1 mr-1'>{' '}terms of use</span> 
+      {' '}and{' '}
+      <span className='font-medium ml-1'>privacy policy</span>
+    </h1>
     </form>
   );
 };
