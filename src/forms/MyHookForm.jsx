@@ -70,7 +70,7 @@ const MyHookForm = () => {
       </div>
 
       <button className='bg-[#FEC628] rounded-full font-medium py-2 text-[10px] mt-2 ' type="submit">Let the conversation begin!</button>
-      <h1 className='mt-2 font-medium text-[10px] '>By logging in you aggree to our terms of use and privacy policy</h1>
+      <h1 className='pb-4 flex items-center justify-center font-medium text-[10px] '>By logging in you aggree to our terms of use and privacy policy</h1>
     </form>
   );
 };
