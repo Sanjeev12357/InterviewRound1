@@ -15,7 +15,7 @@ const MyHookForm = () => {
 
   return (
     <form className='flex  flex-col gap-4 mt-6' onSubmit={handleSubmit(onSubmit)}>
-      <div className='flex flex-col gap-2  '>
+      <div className='flex flex-col gap-1 '>
         <label className='text-[10px] pl-2 font-medium'>Full Name</label>
         <input
         required
@@ -69,7 +69,8 @@ const MyHookForm = () => {
         {errors.dob && <span className="text-[10px] -mt-1 ml-2  text-yellow-500">{errors.dob.message}</span>}
       </div>
 
-      <button className='bg-[#FEC628] rounded-full py-2 text-[10px] mt-2 ' type="submit">Let the conversation begin</button>
+      <button className='bg-[#FEC628] rounded-full font-medium py-2 text-[10px] mt-2 ' type="submit">Let the conversation begin!</button>
+      <h1 className='mt-2 font-medium text-[10px] '>By logging in you aggree to our terms of use and privacy policy</h1>
     </form>
   );
 };
