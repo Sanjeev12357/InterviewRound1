@@ -15,8 +15,8 @@ function App() {
   })
 
   return (
-    <div className='bg-black w-[100%] md:h-[100%] h-[100vh] flex items-center justify-center '>
-        <div className='md:w-[340px] w-full h-full  my-4  relative rounded-md items-center px-6 py-6  bg-[#FEFFFE]  lg:w-[450px]'>
+    <div className='bg-black w-[100%] h-[100vh] md:h-[100%] flex items-center justify-center '>
+        <div className='md:w-[340px] w-full h-full lg:h-[100vh]  my-4  relative rounded-md items-center px-6 py-6  bg-[#FEFFFE]  lg:w-[450px]'>
 
           <div className='cross'>
           <div className='right-4 md:right-2 absolute'>
