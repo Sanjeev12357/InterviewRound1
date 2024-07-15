@@ -39,12 +39,12 @@ const MyHookForm = () => {
         {errors.city && <span className="text-[10px] -mt-1 ml-2  text-yellow-500" >{errors.city.message}</span>}
       </div>
 
-      <div className='flex flex-col gap-1'>
+      <div className='flex flex-col gap-1 relative'>
         <label className='text-sm md:text-[10px] pl-2 font-medium'>Mobile Number:</label>
         <input
         required
         placeholder='Enter your mobile number'
-        className='border text-gray-400 border-gray-300 text-[10px] rounded-full w-full p-2'
+        className='border  text-gray-400 border-gray-300 text-[10px] rounded-full w-full px-10 py-2'
           type="text"
           {...register('mobileNumber', {
             required: {
@@ -55,6 +55,7 @@ const MyHookForm = () => {
               minLength: { value: 10, message: "Invalid Phone Number" },
           })}
         />
+        <span className='-mt-[30px] ml-2 text-[12px] font-semibold   w-7'>+91 | </span>
         {errors.mobileNumber && <span className="text-[10px] -mt-1 ml-2  text-yellow-500">{errors.mobileNumber.message}</span>}
       </div>
 
