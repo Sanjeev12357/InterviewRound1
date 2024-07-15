@@ -44,7 +44,7 @@ const MyHookForm = () => {
         <input
         required
         placeholder='Enter your mobile number'
-        className='border  text-gray-400 border-gray-300 text-[10px] rounded-full w-full px-10 py-2'
+        className='border  text-gray-400 border-gray-300 text-sm md:text-[10px] rounded-full w-full px-10 py-2'
           type="text"
           {...register('mobileNumber', {
             required: {
@@ -55,7 +55,7 @@ const MyHookForm = () => {
               minLength: { value: 10, message: "Invalid Phone Number" },
           })}
         />
-        <span className='-mt-[30px] ml-2 text-[12px] font-semibold   w-7'>+91 | </span>
+        <span className='-mt-[30px] ml-2 text-[10px] font-semibold   w-7'>+91 | </span>
         {errors.mobileNumber && <span className="text-[10px] -mt-1 ml-2  text-yellow-500">{errors.mobileNumber.message}</span>}
       </div>
 

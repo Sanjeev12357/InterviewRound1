@@ -7,12 +7,7 @@ import cross from "./assets/images/Screenshot 2024-07-15 082706.png"
 import MyHookForm from './forms/MyHookForm'
 
 function App() {
-  const [formData, setFormData] = useState({
-    fullname:"",
-    city:"",
-    mobilenumber:"",
-    dob:"",
-  })
+  
 
   return (
     <div className='bg-black w-[100%] h-[100vh] md:h-[100%] flex items-center justify-center '>
