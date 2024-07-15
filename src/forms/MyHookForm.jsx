@@ -55,7 +55,7 @@ const MyHookForm = () => {
               minLength: { value: 10, message: "Invalid Phone Number" },
           })}
         />
-        <span className='-mt-[30px] ml-2 text-[10px] font-semibold   w-7'>+91 | </span>
+        <span className='-mt-[32px] ml-2 text-[12px] font-semibold   w-7'>+91 | </span>
         {errors.mobileNumber && <span className="text-[10px] -mt-1 ml-2  text-yellow-500">{errors.mobileNumber.message}</span>}
       </div>
 
